@@ -40,14 +40,16 @@
       </div>
       <form>
   </nav>
-  <br> <br>
+  <br> 
+  <h1 class="col d-flex justify-content-center">City name: {{city}}</h1>
+  <br>
   <div class="row">
     {% if country_code and coordinate and temp and pressure and humidity %}
     <div class="col d-flex justify-content-center" ">
       <div class=" card text-white bg-light mb-6">
       <div class=" card-body">
         <h4><span class="badge badge-primary">Country Code :</span> {{country_code}}</h4>
-        <h4><span class="badge badge-primary">Coordinates [X,Y] :</span> {{coordinate}}</h4>
+        <h4><span class="badge badge-primary">Coordinates [Lat,Lon] :</span> {{coordinate}}</h4>
         <h4><span class="badge badge-primary">Temperature :</span> {{temp}}</h4>
         <h4><span class="badge badge-primary">Min Temperature :</span> {{temp_min}}</h4>
         <h4><span class="badge badge-primary">Max Temperature :</span> {{temp_max}}</h4>
