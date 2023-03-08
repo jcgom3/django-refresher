@@ -30,7 +30,7 @@ def index(request):
             "icon":list_of_data['weather'][0]['icon'],
             "city": str(list_of_data['name'])
         }
-        print(data)
+        print(data['timezone'])
     else: 
         data = {
             

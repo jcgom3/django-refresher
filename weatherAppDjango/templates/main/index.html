@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <br /><br /> <br>
+  <br/><br /> <br>
   <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top:-50px">
     <h1 class="display-5">Weather Desktop App </h1>
     <h5>Using Python Language and Django Framework</h5>
@@ -40,12 +40,13 @@
       </div>
       <form>
   </nav>
-  <br> 
+  
+  <div class="column">
+    {% if country_code and coordinate and temp and temp_min and temp_max and pressure and humidity and timezone %}
+    <br> 
   <h1 class="col d-flex justify-content-center">City name: {{city}}</h1>
   <br>
-  <div class="row">
-    {% if country_code and coordinate and temp and pressure and humidity %}
-    <div class="col d-flex justify-content-center" ">
+  <div class="col d-flex justify-content-center mb-5">
       <div class=" card text-white bg-light mb-6">
       <div class=" card-body">
         <h4><span class="badge badge-primary">Country Code :</span> {{country_code}}</h4>
